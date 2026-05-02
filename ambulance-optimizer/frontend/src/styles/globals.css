@@ -1,0 +1,176 @@
+/* ─── Google Fonts already loaded in index.html ─── */
+
+/* ─── Design Tokens ─────────────────────────────── */
+:root {
+  /* Backgrounds — layered depth */
+  --bg-0: #060a0e;
+  --bg-1: #0b1018;
+  --bg-2: #111820;
+  --bg-3: #172030;
+  --bg-4: #1c2838;
+  --bg-5: #223040;
+
+  /* Signal colors — each has ONE operational meaning */
+  --red:    #ff3d3d;
+  --orange: #ff8c00;
+  --yellow: #f5c842;
+  --green:  #3ddc84;
+  --blue:   #38b6ff;
+  --purple: #9b6dff;
+  --teal:   #00d4c8;
+
+  /* Dimmed variants for backgrounds */
+  --red-d:    rgba(255, 61,  61,  0.10);
+  --orange-d: rgba(255, 140, 0,   0.10);
+  --yellow-d: rgba(245, 200, 66,  0.08);
+  --green-d:  rgba(61,  220, 132, 0.08);
+  --blue-d:   rgba(56,  182, 255, 0.10);
+  --purple-d: rgba(155, 109, 255, 0.10);
+
+  /* Text */
+  --text-1: #edf2f7;
+  --text-2: #8fa3b8;
+  --text-3: #445566;
+
+  /* Borders */
+  --b-1: rgba(255, 255, 255, 0.04);
+  --b-2: rgba(255, 255, 255, 0.08);
+  --b-3: rgba(255, 255, 255, 0.14);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+
+  /* Radius */
+  --r-xs: 3px;
+  --r-sm: 5px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+}
+
+/* ─── Reset ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg-0);
+  color: var(--text-1);
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.15s ease;
+}
+
+input, textarea, select {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: var(--bg-3);
+  border: 1px solid var(--b-2);
+  border-radius: var(--r-md);
+  color: var(--text-1);
+  padding: 9px 12px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(56, 182, 255, 0.12);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-3);
+}
+
+select option {
+  background: var(--bg-2);
+}
+
+/* ─── Scrollbar ─────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb { background: var(--b-2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--b-3); }
+
+/* ─── Keyframes ─────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulseRed {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.5); }
+  60%       { box-shadow: 0 0 0 10px rgba(255, 61, 61, 0); }
+}
+@keyframes pulseOrange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 140, 0, 0.4); }
+  60%       { box-shadow: 0 0 0 8px rgba(255, 140, 0, 0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.2; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes newItemFlash {
+  from { background: rgba(56, 182, 255, 0.14); }
+  to   { background: transparent; }
+}
+
+/* ─── Utility classes ───────────────────────────── */
+.animate-fade-up    { animation: fadeUp 0.3s ease forwards; }
+.animate-slide-left { animation: slideInLeft 0.25s ease forwards; }
+.animate-slide-right{ animation: slideInRight 0.25s ease forwards; }
+.pulse-red          { animation: pulseRed 2s ease-in-out infinite; }
+.pulse-orange       { animation: pulseOrange 2.5s ease-in-out infinite; }
+.blink              { animation: blink 1.2s ease-in-out infinite; }
+.spin               { animation: spin 0.7s linear infinite; }
+.new-item-flash     { animation: newItemFlash 1s ease forwards; }
+
+/* ─── Scanline CRT overlay ──────────────────────── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.03) 3px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}

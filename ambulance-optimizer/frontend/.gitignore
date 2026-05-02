@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+#secret 
+.env
+
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧪 Virtual environment
+venv/
+env/
+.venv/
+
+# 📦 Package / build files
+build/
+dist/
+*.egg-info/
+
+# 📓 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ⚙️ IDE / Editor files
+.vscode/
+.idea/
+
+# 📊 Large ML files (IMPORTANT)
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+
+
+# 📄 Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

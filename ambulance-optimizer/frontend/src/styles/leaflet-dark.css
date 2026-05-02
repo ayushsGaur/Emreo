@@ -1,0 +1,49 @@
+/* ─── Leaflet dark map theme ─────────────────────── */
+.leaflet-container {
+  background: #060a0e !important;
+  font-family: 'Space Mono', monospace !important;
+}
+
+.leaflet-control-zoom a {
+  background: #111820 !important;
+  color: #8fa3b8 !important;
+  border-color: rgba(255,255,255,0.08) !important;
+  font-family: 'Space Mono', monospace !important;
+}
+.leaflet-control-zoom a:hover {
+  background: #172030 !important;
+  color: #edf2f7 !important;
+}
+.leaflet-control-attribution {
+  background: rgba(6, 10, 14, 0.85) !important;
+  color: #445566 !important;
+  font-size: 9px !important;
+}
+.leaflet-control-attribution a {
+  color: #38b6ff !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #111820 !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  border-radius: 10px !important;
+  color: #edf2f7 !important;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.65) !important;
+}
+.leaflet-popup-tip {
+  background: #111820 !important;
+}
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  font-family: 'Space Mono', monospace !important;
+  font-size: 11px !important;
+}
+.leaflet-popup-close-button {
+  color: #8fa3b8 !important;
+  font-size: 16px !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+.leaflet-popup-close-button:hover {
+  color: #edf2f7 !important;
+}
