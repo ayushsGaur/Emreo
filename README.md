@@ -1,5 +1,3 @@
-<img width="351" height="809" alt="Screenshot..." src="https://github.com/user-attachments/assets/c3124e43-4ddb-46f9-9c85-512448b215c5" />
-
 # Emreo - AI-Powered Emergency Response Optimizer for Ambulance Dispatch
 
 ## Overview
