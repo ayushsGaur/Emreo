@@ -1,3 +1,5 @@
+<img width="351" height="809" alt="Screenshot..." src="https://github.com/user-attachments/assets/c3124e43-4ddb-46f9-9c85-512448b215c5" />
+
 # Emreo - AI-Powered Emergency Response Optimizer for Ambulance Dispatch
 
 ## Overview
@@ -9,8 +11,8 @@ The platform combines machine learning, real-time communication, and location-ba
 ---
 
 ## Dashboard Preview
+<img width="1542" height="947" alt="Screenshot 2026-04-23 000952" src="https://github.com/user-attachments/assets/8ee0fa2c-850c-4d35-97b7-bb8c2b5ee4c9" />
 
-![Dashboard Preview](<img width="1542" height="947" alt="Screenshot 2026-04-23 000952" src="https://github.com/user-attachments/assets/f993425a-7907-4e39-8222-d7bef91b66c9" />)
 
 
 ---
@@ -46,31 +48,28 @@ The platform combines machine learning, real-time communication, and location-ba
 
 ## Screenshots
 
-### Incident Reporting Panel
+### Incident Severity and Current Status Panel
 
-![Incident Severity and Current Status](<img width="351" height="809" alt="Screenshot 2026-04-23 001001 - Copy" src="https://github.com/user-attachments/assets/19a8d3da-ae99-48eb-9232-bef868a01959" />
-)
+<img width="351" height="809" alt="Screenshot 2026-04-23 001001 - Copy" src="https://github.com/user-attachments/assets/b7a01fa6-7c17-4801-a335-992faef9bfdd" />
+
 
 ---
 
 ### Available Fleet
+<img width="336" height="826" alt="Screenshot 2026-04-23 001033" src="https://github.com/user-attachments/assets/e826c617-d4d5-4d31-9b53-449366320512" />
 
-![Available Fleet](<img width="336" height="826" alt="Screenshot 2026-04-23 001033" src="https://github.com/user-attachments/assets/b6f15443-7e6f-4df8-a3c9-b7cdf5eb631f" />
-)
 
 ---
 
 ### Live Map Tracking
+<img width="836" height="811" alt="Screenshot 2026-04-23 001012 - Copy" src="https://github.com/user-attachments/assets/6d22c9b2-b270-4781-b224-e97f297f4142" />
 
-![Live Map Tracking](<img width="836" height="811" alt="Screenshot 2026-04-23 001012 - Copy" src="https://github.com/user-attachments/assets/a4c3a998-8475-441d-98a5-d1646a51a42d" />
-)
 
 ---
 
 ### Log New Incident
+<img width="619" height="566" alt="Screenshot 2026-04-23 001147" src="https://github.com/user-attachments/assets/f951dc85-cca4-4672-b571-2abfb81a0772" />
 
-![Log New Incident](<img width="619" height="566" alt="Screenshot 2026-04-23 001147" src="https://github.com/user-attachments/assets/66438454-dd14-4858-86fe-89b2a2d449db" />
-)
 
 ---
 
